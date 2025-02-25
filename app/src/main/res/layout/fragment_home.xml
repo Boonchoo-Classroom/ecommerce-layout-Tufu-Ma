@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeFragment">
+    tools:context="ui.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- แบนเนอร์ -->
+
+    <!-- หัวข้อสินค้าแนะนำ -->
+
+    <!-- รายการสินค้าแนะนำ -->
+
+    <!-- หัวข้อโปรโมชั่น -->
+
+    <!-- รายการโปรโมชั่น -->
+
+    <!-- ตัวอย่างรูปภาพสินค้า -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragement" />
+        android:id="@+id/tvRecommendedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="สินค้าแนะนำ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvPromotionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="โปรโมชั่นที่น่าสนใจ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <ImageView
+        android:id="@+id/sampleProductImage"
+        android:layout_width="178dp"
+        android:layout_height="185dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/darker_gray"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPromotionsTitle" />
+
+    <ImageView
+        android:id="@+id/sampleProductImage2"
+        android:layout_width="177dp"
+        android:layout_height="187dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/darker_gray"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPromotionsTitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="186dp"
+        android:src="@drawable/sample_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="177dp"
+        android:layout_height="186dp"
+        android:src="@drawable/sample_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="490dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="504dp"
+        android:src="@drawable/banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
